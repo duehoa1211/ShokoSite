@@ -16,10 +16,11 @@ export default defineConfig({
             route(':id', 'routes/downloads/DownloadPageLevel1.tsx');
             route(':id/:subid', 'routes/downloads/DownloadPageLevel2.tsx');
           });
+          route('blog', 'routes/blog/Blog.tsx');
           route('*', 'routes/404.tsx', { id: '404' });
         });
-      },
+      }
     }),
-    tsconfigPaths(),
-  ],
+    tsconfigPaths()
+  ]
 });
